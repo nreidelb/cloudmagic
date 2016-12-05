@@ -86,11 +86,9 @@
             </dependency>
             <!-- https://mvnrepository.com/artifact/org.hibernate.javax.persistence/hibernate-jpa-2.1-api -->
             <dependency>
-				<groupId>org.jboss.bom</groupId>
-				<artifactId>jboss-javaee-6.0-with-hibernate</artifactId>
-				<version>1.0.0.M11-redhat-1</version>
-				<type>pom</type>
-				<scope>import</scope>
+			    <groupId>org.jboss.bom</groupId>
+			    <artifactId>jboss-javaee-6.0-with-hibernate</artifactId>
+			    <version>1.0.7.Final</version>
 			</dependency>
         </dependencies>
     </dependencyManagement>
@@ -204,10 +202,11 @@
         </dependency>        
         
         <dependency>
-			<groupId>org.hibernate.javax.persistence</groupId>
-			<artifactId>hibernate-jpa-2.0-api</artifactId>
-			<scope>provided</scope>
+		    <groupId>org.hibernate.javax.persistence</groupId>
+		    <artifactId>hibernate-jpa-2.0-api</artifactId>
+		    <version>1.0.1.Final</version>
 		</dependency>
+
 
     </dependencies>
 

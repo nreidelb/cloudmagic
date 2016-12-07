@@ -20,7 +20,7 @@
    xsi:schemaLocation="
         http://xmlns.jcp.org/xml/ns/persistence
         http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
-   <!-- persistence-unit name="sample" transaction-type="RESOURCE_LOCAL">
+   <persistence-unit name="sample" transaction-type="RESOURCE_LOCAL">
 		<non-jta-data-source>java:jboss/datasources/ExampleDS</non-jta-data-source>
 	      <properties>
 	         <property name="hibernate.hbm2ddl.auto" value="create" />
@@ -29,9 +29,9 @@
 	         <property name="javax.persistence.schema-generation.scripts.action" value="create"/>
 	         <property name="javax.persistence.schema-generation.scripts.create-target" value="schema.ddl"/>
 	      </properties>
-	</persistence-unit-->
+	</persistence-unit>
         
-   <persistence-unit name="primary" transaction-type="JPA">
+   <!--<persistence-unit name="primary" transaction-type="JPA">
       <non-jta-data-source>java:jboss/datasources/magicCubeManagerDS</non-jta-data-source>
       <properties>
          <property name="hibernate.hbm2ddl.auto" value="create" />
@@ -41,4 +41,5 @@
          <property name="javax.persistence.schema-generation.scripts.create-target" value="schema.ddl"/>
       </properties>
    </persistence-unit>
+   -->
 </persistence>
